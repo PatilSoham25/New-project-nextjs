@@ -15,11 +15,11 @@ export default function AboutImg() {
       />
 
       {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-black/50" />
+      <div className="absolute inset-0 bg-white/10" />
 
       {/* Content */}
-      <div className="absolute inset-0 flex items-center justify-between">
-        <h1 className="text-white text-3xl md:text-5xl font-bold tracking-wide">
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="text-black text-3xl md:text-6xl font-bold tracking-wide">
           About Us
         </h1>
       </div>
