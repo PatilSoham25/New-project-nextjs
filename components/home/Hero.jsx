@@ -18,13 +18,13 @@ export default function Hero() {
         <div className="text-white max-w-3xl">
           
           <h1 className="text-lg md:text-xl mt-4 mb-4 space-y-4"
-          data-aos="fade-left"
+          data-aos="fade-right"
           >
             Leading process equipment manufacturer for chemical, pharma, API, biotech and petrochemical industries.
           </h1>
           
           <p className="font-bold text-3xl md:text-6xl"
-          data-aos="fade-left"
+          data-aos="fade-right"
           >&quot;Your Trusted Partner for Growth&quot;</p>
           
         </div>

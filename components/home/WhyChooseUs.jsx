@@ -37,23 +37,29 @@ export default function WhyChooseUs() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* LEFT IMAGE */}
-          <div className="relative flex justify-center">
-            {/* border frame */}
-            <div className="absolute w-[90%] h-[90%] border-4 border-white top-6 left-6"></div>
+          <div
+            className="relative flex justify-center items-center"
+            data-aos="fade-right"
+          >
+            {/* wrapper that controls size */}
+            <div className="relative w-full max-w-[500px] h-[400px] sm:h-[500px]">
+              {/* frame */}
+              <div className="absolute inset-0 translate-x-6 translate-y-6 border-4 border-white"></div>
 
-            {/* bouncing image */}
-            <div className="relative w-full h-[400px] sm:h-[500px] animate-bounce-slow">
-              <Image
-                src="/whychoose.webp" 
-                alt="why choose us"
-                fill
-                className="object-cover shadow-xl"
-              />
+              {/* animated wrapper */}
+              <div className="relative w-full h-full floating">
+                <Image
+                  src="/whychoose.webp"
+                  alt="why choose us"
+                  fill
+                  className="object-cover shadow-xl"
+                />
+              </div>
             </div>
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="space-y-10">
+          <div className="space-y-10" data-aos="fade-left">
             {features.map((item, index) => {
               const Icon = item.icon;
               return (

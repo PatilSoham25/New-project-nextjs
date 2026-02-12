@@ -44,7 +44,8 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
-        <h2 className="text-center text-4xl font-bold text-teal-600 mb-12">
+        <h2 className="text-center text-4xl font-bold text-teal-600 mb-12"
+        data-aos="fade-down">
           Our Projects
         </h2>
 
@@ -56,12 +57,17 @@ export default function ProjectsSection() {
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                className={`w-full text-left px-6 py-4 shadow transition font-medium
+                data-aos="fade-right"
+                data-aos-delay={index * 150}
+                className={`rounded font-semibold w-full text-left px-6 py-4 shadow transition font-medium transform hover:-translate-y-1
                 ${
                   active === index
                     ? "bg-teal-600 text-white"
                     : "bg-gray-200 hover:bg-gray-300 text-gray-800"
                 }`}
+                style={{
+                  transform: `translateY(${index * 2}px)`,
+                }}
               >
                 {item.name}
               </button>
@@ -71,7 +77,8 @@ export default function ProjectsSection() {
           {/* RIGHT CONTENT */}
           <div>
             {/* Image */}
-            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] mb-6">
+            <div className="relative w-full h-[250px] sm:h-[350px] md:h-[400px] mb-6"
+            >
               <Image
                 src={projects[active].image}
                 alt={projects[active].name}

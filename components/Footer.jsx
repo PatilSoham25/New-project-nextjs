@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { Phone, Mail } from "lucide-react";
 import {
   Linkedin,
   Instagram,
@@ -10,96 +9,73 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
-  const links = [
-    "Home",
-    "About Us",
-    "Products",
-    "EPC Projects",
-    "Services",
-    "Blog",
-    "Contact Us",
-  ];
-
   return (
-    <footer className="bg-[#0b1c2d] text-white">
-      <div className="max-w-7xl mx-auto px-6 py-12">
-        {/* Top */}
-        <div className="grid md:grid-cols-3 gap-10 items-start">
+    <footer className="bg-cyan-700 text-white">
+      <div className="max-w-7xl mx-auto px-6 py-14">
+        {/* TOP AREA */}
+        <div 
+          className="grid md:grid-cols-5 gap-10"
+          data-aos="fade-up"
+          >
           
-          {/* Company */}
-          <div>
-            <h3 className="text-xl font-semibold mb-4">
-              Padmatech Industries Pvt. Ltd.
-            </h3>
-            <p className="text-gray-300">
-              Delivering innovative industrial and engineering solutions with
-              quality, safety and reliability.
-            </p>
+          {/* LOGO */}
+          <div className="h-18 w-30">
+            <img src="/logo.webp" className="h-full w-full" />
           </div>
 
-          {/* Links */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              {links.map((item, i) => (
-                <li key={i}>
-                  <Link
-                    href="/"
-                    className="text-gray-300 hover:text-teal-400 transition"
-                  >
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          {/* COLUMN 1 */}
+          <div className="space-y-2 font-semibold text-sm text-white">
+            <p>Products</p>
+            <p>Pre-sale FAQs</p>
+            <p>Submit a Ticket</p>
           </div>
 
-          {/* Contact */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
+          {/* COLUMN 2 */}
+          <div className="space-y-2 font-semibold text-sm text-white">
+            <p>Services</p>
+            <p>Theme Tweak</p>
+          </div>
 
-            <div className="flex items-center gap-3 mb-3">
-              <Phone className="w-5 h-5 text-teal-400" />
-              <span className="text-gray-300">+91 9146140044</span>
-            </div>
+          {/* COLUMN 3 */}
+          <div className="space-y-2 font-semibold text-sm text-white">
+            <p>Showcase</p>
+            <p>Widgetkit</p>
+            <p>Support</p>
+          </div>
 
-            <div className="flex items-center gap-3 mb-5">
-              <Mail className="w-5 h-5 text-teal-400" />
-              <span className="text-gray-300">
-                padmatechindustries@gmail.com
-              </span>
-            </div>
-
-            {/* Social */}
-            <div className="flex gap-4">
-              <a href="#" className="hover:text-teal-400">
-                <Linkedin />
-              </a>
-              <a href="#" className="hover:text-teal-400">
-                <Instagram />
-              </a>
-              <a href="#" className="hover:text-teal-400">
-                <Facebook />
-              </a>
-              <a href="#" className="hover:text-teal-400">
-                <Youtube />
-              </a>
-
-              {/* Pinterest (custom circle) */}
-              <a
-                href="#"
-                className="w-6 h-6 flex items-center justify-center border rounded-full text-xs hover:text-teal-400"
-              >
-                P
-              </a>
-            </div>
+          {/* COLUMN 4 */}
+          <div className="space-y-2 font-semibold text-sm text-white">
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Affiliates</p>
+            <p>Resources</p>
           </div>
         </div>
-      </div>
 
-      {/* Bottom */}
-      <div className="border-t border-gray-600 text-center py-4 text-gray-300 text-sm">
-        Copyright © 2026 – Padmatech Industries Pvt. Ltd. | All Rights Reserved
+        {/* DIVIDER */}
+        <div className="border-t border-gray-200 my-10"></div>
+
+        {/* SOCIAL */}
+        <div className="flex justify-center gap-4"
+        data-aos="fade-down">
+          <a className="w-10 h-10 flex items-center justify-center rounded-full border border-blue-900 hover:border-white transition">
+            <Facebook size={18} />
+          </a>
+          <a className="w-10 h-10 flex items-center justify-center rounded-full border border-blue-900 hover:border-white transition">
+            <Instagram size={18} />
+          </a>
+          <a className="w-10 h-10 flex items-center justify-center rounded-full border border-blue-900 hover:border-white transition">
+            <Linkedin size={18} />
+          </a>
+          <a className="w-10 h-10 flex items-center justify-center rounded-full border border-blue-900 hover:border-white transition">
+            <Youtube size={18} />
+          </a>
+        </div>
+
+        {/* COPYRIGHT */}
+        <p className="text-center font-semibold text-white text-sm mt-6">
+          Copyright © 2026 – Padmatech Industries Pvt. Ltd. | All Rights Reserved
+        </p>
       </div>
     </footer>
   );
