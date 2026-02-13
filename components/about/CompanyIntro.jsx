@@ -1,6 +1,6 @@
 "use client";
 
-export default function About() {
+export default function CompanyIntro() {
   return (
     <section className="bg-gray-100 py-30">
       <div className="max-w-6xl mx-auto px-6">
