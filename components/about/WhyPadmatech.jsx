@@ -50,7 +50,8 @@ export default function WhyPadmatech() {
       </h2>
 
       {/* GRID */}
-      <div className="max-w-7xl mx-auto px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="max-w-7xl mx-auto px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
+      data-aos="zoom-in">
         {features.map((item, index) => {
           const Icon = item.icon;
 
@@ -58,7 +59,7 @@ export default function WhyPadmatech() {
             <div
               key={index}
               className="bg-white p-8 shadow-xl hover:shadow-2xl transition rounded-sm"
-              data-aos="zoom-in"
+              
             >
               {/* ICON */}
               <div className="w-14 h-14 flex items-center justify-center bg-cyan-600 text-white mb-5">

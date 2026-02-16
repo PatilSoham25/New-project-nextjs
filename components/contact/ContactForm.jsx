@@ -21,13 +21,13 @@ export default function ContactForm() {
               type="text"
               placeholder="First Name*"
               required
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
+              className="placeholder-gray-400 text-black w-full border border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
             />
 
             <input
               type="text"
               placeholder="Last Name"
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
+              className="placeholder-gray-400 text-black w-full border border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
             />
           </div>
 
@@ -37,14 +37,14 @@ export default function ContactForm() {
               type="email"
               placeholder="Email*"
               required
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
+              className="placeholder-gray-400 text-black w-full border border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
             />
 
             <input
               type="tel"
               placeholder="Phone No.*"
               required
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
+              className="placeholder-gray-400 text-black w-full border border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
             />
           </div>
 
@@ -52,14 +52,14 @@ export default function ContactForm() {
           <input
             type="text"
             placeholder="Company"
-            className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
+            className="placeholder-gray-400 text-black w-full border border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
           />
 
           {/* Requirements */}
           <textarea
             rows="5"
             placeholder="Requirements"
-            className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
+            className="placeholder-gray-400 text-black w-full border border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
           ></textarea>
 
           {/* Button */}
