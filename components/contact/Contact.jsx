@@ -7,7 +7,7 @@ export default function ContactImg() {
     <section className="mt-18 relative w-full h-[55vh] md:h-[70vh] lg:h-[80vh]">
       {/* Background Image */}
       <Image
-        src="/contact.jpg"  
+        src="/contactS.jpg"  
         alt="Contact Padmatech Industries"
         fill
         priority
