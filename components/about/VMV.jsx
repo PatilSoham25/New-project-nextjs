@@ -34,7 +34,7 @@ export default function VMV() {
   const Icon = current.icon;
 
   return (
-    <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+    <section className="py-16 bg-gradient-to-r from-blue-700 to-blue-400 text-white">
       <div className="max-w-6xl mx-auto px-6">
         {/* TAB BUTTONS */}
         <div className="flex flex-wrap justify-center gap-9 mb-16"
@@ -46,8 +46,8 @@ export default function VMV() {
               className={`relative px-6 md:px-15 py-4 font-semibold transition cursor-pointer
                 ${
                   active === tab.id
-                    ? "bg-teal-500 text-white"
-                    : "bg-gray-200 text-gray-700 hover:bg-white"
+                    ? "bg-teal-400 text-white"
+                    : "bg-white text-gray-800"
                 }`}
             >
               {tab.label}
@@ -61,7 +61,7 @@ export default function VMV() {
         </div>
 
         {/* CONTENT BOX */}
-        <div className="relative max-w-3xl mx-auto border border-white/40 p-8 md:p-12 text-center"
+        <div className="relative max-w-3xl mx-auto border border-white/100 p-8 md:p-12 text-center"
         data-aos="fade-up">
           {/* circle icon */}
           <div className="absolute -top-10 left-1/2 -translate-x-1/2 bg-white rounded-full p-4"
@@ -69,11 +69,11 @@ export default function VMV() {
             <Icon className="text-teal-600 w-8 h-8" />
           </div>
 
-          <h3 className="text-3xl font-bold mb-6 mt-4">
+          <h3 className="text-white text-3xl font-bold mb-6 mt-4">
             {current.label}
           </h3>
 
-          <p className="text-gray-200 leading-relaxed">
+          <p className="text-gray-200 font-semibold leading-relaxed">
             {current.content}
           </p>
         </div>

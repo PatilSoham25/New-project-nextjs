@@ -12,7 +12,8 @@ export default function ContactForm() {
         </h2>
 
         {/* Form */}
-        <form className="space-y-6">
+        <form className="space-y-6"
+        data-aos="zoom-out">
           
           {/* Row 1 */}
           <div className="grid md:grid-cols-2 gap-6">
@@ -21,14 +22,12 @@ export default function ContactForm() {
               placeholder="First Name*"
               required
               className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
-              data-aos="fade-right"
             />
 
             <input
               type="text"
               placeholder="Last Name"
               className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
-              data-aos="fade-left"
             />
           </div>
 
@@ -39,7 +38,6 @@ export default function ContactForm() {
               placeholder="Email*"
               required
               className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
-              data-aos="fade-right"
             />
 
             <input
@@ -47,7 +45,6 @@ export default function ContactForm() {
               placeholder="Phone No.*"
               required
               className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
-              data-aos="fade-left"
             />
           </div>
 
@@ -56,7 +53,6 @@ export default function ContactForm() {
             type="text"
             placeholder="Company"
             className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
-            data-aos="fade-right"
           />
 
           {/* Requirements */}
@@ -64,14 +60,12 @@ export default function ContactForm() {
             rows="5"
             placeholder="Requirements"
             className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500"
-            data-aos="fade-left"
           ></textarea>
 
           {/* Button */}
           <button
             type="submit"
             className="w-full cursor-pointer bg-cyan-600 hover:bg-cyan-700 text-white font-semibold tracking-widest py-3 rounded-md transition"
-            data-aos="fade-right"
           >
             SUBMIT
           </button>

@@ -1,18 +1,48 @@
 "use client";
 
+import Image from "next/image";
+
 export default function CompanyIntro() {
   return (
-    <section className="bg-gray-100 py-30">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="relative bg-gray-200 py-28 overflow-hidden">
+      
+      {/* Cartoon Factory Background */}
+      <div className="absolute left-0 top-0 opacity-10 pointer-events-none">
+        <Image
+          src="/Processing.png" 
+          alt="factory illustration"
+          width={600}
+          height={600}
+          className="object-cover"
+        />
+      </div>
+
+      <div className="absolute right-0 bottom-0 opacity-10 pointer-events-none">
+        <Image
+          src="/manufacturing.png" 
+          alt="factory illustration"
+          width={600}
+          height={600}
+          className="object-cover"
+        />
+      </div>
+
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        
         {/* Heading */}
-        <h1 className="text-3xl md:text-4xl font-bold text-cyan-600 mb-8"
-        data-aos="fade-right">
+        <h1
+          className="text-3xl md:text-4xl font-bold text-cyan-600 mb-8"
+          data-aos="fade-right"
+        >
           About Padmatech Industries
         </h1>
 
         {/* Content */}
-        <div className="space-y-6 text-gray-700 leading-relaxed">
-          <p data-aos="fade-right">
+        <div
+          className="space-y-6 text-gray-700 leading-relaxed"
+          data-aos="fade-right"
+        >
+          <p>
             Established in 2005, Padmatech Industries is a premier EPC company
             specializing in turnkey equipment supply, process equipment
             manufacturing, and EPC projects for industries such as chemicals,
@@ -24,7 +54,7 @@ export default function CompanyIntro() {
             the nation.
           </p>
 
-          <p data-aos="fade-right">
+          <p>
             Padmatech Industries Pvt. Ltd. has 20 years of extensive experience
             in the field of process equipment manufacturing. We offer a wide
             range of industrial processing equipment, chemical processing
@@ -38,7 +68,7 @@ export default function CompanyIntro() {
             energy-efficient solutions for over two decades.
           </p>
 
-          <p data-aos="fade-right">
+          <p>
             At Padmatech Industries, our focus on innovation drives every
             aspect of our operations, ensuring that our superior products
             deliver a memorable experience to our clients. With a strong
@@ -46,7 +76,7 @@ export default function CompanyIntro() {
             satisfaction, we have established ourselves as industry leaders.
           </p>
 
-          <p data-aos="fade-right">
+          <p>
             Our services are carried out in several state-of-the-art facilities,
             each equipped with the latest technology and staffed by a team of
             skilled professionals. We take pride in our law-abiding practices,

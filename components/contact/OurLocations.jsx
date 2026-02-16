@@ -28,7 +28,7 @@ export default function OurLocations() {
   ];
 
   return (
-    <section className="py-12 sm:py-16 bg-gradient-to-r from-blue-900 to-blue-700">
+    <section className="py-12 sm:py-16 bg-gradient-to-r from-blue-700 to-blue-400">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Heading */}
