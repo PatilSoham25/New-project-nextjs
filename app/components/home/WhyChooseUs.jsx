@@ -31,7 +31,8 @@ export default function WhyChooseUs() {
     <section className="relative py-16 bg-gradient-to-r from-blue-900 to-blue-700 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
         {/* Title */}
-        <h2 className="text-center text-white text-4xl font-bold mb-12">
+        <h2 className="text-center text-white text-4xl font-bold mb-12"
+        data-aos="fade-down">
           Why Choose Us
         </h2>
 

@@ -29,7 +29,7 @@ export default function OurCustomers() {
         
         {/* Heading */}
         <h2 className="text-teal-600 text-3xl md:text-4xl font-bold text-center mb-12"
-        data-aos="fade-down">
+        >
           Our Valued Customers
         </h2>
 

@@ -1,6 +1,7 @@
-import Contact from "@/components/contact/Contact"
-import ContactForm from "@/components/contact/ContactForm"
-import OurLocations from "@/components/contact/OurLocations"
+import Contact from "../components/contact/Contact"
+import ContactForm from "../components/contact/ContactForm"
+import OurLocations from "../components/contact/OurLocations"
+import Footer from "../components/Footer"
 
 export default function ContactPage() {
   return (
@@ -8,6 +9,7 @@ export default function ContactPage() {
       <Contact />
       <ContactForm />
       <OurLocations />
+      <Footer />
     </>
   ) 
 }

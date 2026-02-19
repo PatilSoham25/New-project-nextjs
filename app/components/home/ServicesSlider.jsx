@@ -24,7 +24,7 @@ export default function ServicesSlider() {
 
         {/* Title */}
         <h2 className="text-center text-white text-4xl font-bold mb-12"
-        data-aos="fade-down">
+        >
           Our Services
         </h2>
 

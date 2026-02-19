@@ -40,12 +40,13 @@ export default function ProjectsSection() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50"
+    >
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
         <h2 className="text-center text-4xl font-bold text-teal-600 mb-12"
-        data-aos="fade-down">
+        >
           Our Projects
         </h2>
 
@@ -57,8 +58,6 @@ export default function ProjectsSection() {
               <button
                 key={index}
                 onClick={() => setActive(index)}
-                data-aos="fade-right"
-                data-aos-delay={index * 150}
                 className={`rounded font-semibold w-full text-left px-6 py-4 shadow transition font-medium transform hover:-translate-y-1
                 ${
                   active === index

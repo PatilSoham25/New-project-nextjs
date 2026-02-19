@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Lightbulb,
   Settings,
@@ -42,24 +44,29 @@ const features = [
 
 export default function WhyPadmatech() {
   return (
-    <section className="relative py-16 bg-gradient-to-br bg-white">
+    <section className="relative py-16 bg-white">
+      
       {/* HEADING */}
-      <h2 className="text-center text-cyan-700 text-3xl md:text-4xl font-bold mb-12"
-      data-aos="fade-down">
+      <h2
+        className="text-center text-cyan-700 text-3xl md:text-4xl font-bold mb-12"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         Why Choose Padmatech Industries
       </h2>
 
       {/* GRID */}
-      <div className="max-w-7xl mx-auto px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
-      data-aos="zoom-in">
+      <div className="max-w-7xl mx-auto px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
         {features.map((item, index) => {
           const Icon = item.icon;
 
           return (
             <div
               key={index}
-              className="bg-white p-8 shadow-xl hover:shadow-2xl transition rounded-sm"
-              
+              className="bg-white p-8 shadow-xl hover:shadow-2xl transition-all duration-300 rounded-sm"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              data-aos-duration="800"
             >
               {/* ICON */}
               <div className="w-14 h-14 flex items-center justify-center bg-cyan-600 text-white mb-5">

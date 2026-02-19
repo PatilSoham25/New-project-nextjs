@@ -21,7 +21,7 @@ export default function OurLocations() {
     {
       name: "Factory Unit-III",
       address:
-        "Plot No. A-10, Newasa Industrial Area, Village. Shingve Tukai, District – Ahilyanagar 414607, Maharashtra, India.",
+        "Plot No. A-10, Newasa Industrial Area, Village Shingve Tukai, District – Ahilyanagar 414607, Maharashtra, India.",
       phone: "+91 9822552882",
       email: "marketing@padmatechindustries.com",
     },
@@ -32,8 +32,11 @@ export default function OurLocations() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Heading */}
-        <h2 className="text-center text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12"
-        data-aos="fade-down">
+        <h2
+          className="text-center text-white text-2xl sm:text-3xl md:text-4xl font-bold mb-8 sm:mb-12"
+          data-aos="fade-down"
+          data-aos-duration="1000"
+        >
           Our Company Locations
         </h2>
 
@@ -42,8 +45,10 @@ export default function OurLocations() {
           {locations.map((loc, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl shadow-xl p-5 sm:p-6 hover:scale-105 transition duration-300 flex flex-col"
-              data-aos="zoom-in"
+              className="bg-white rounded-xl shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 p-5 sm:p-6 flex flex-col"
+              data-aos="fade-up"
+              data-aos-delay={index * 150}
+              data-aos-duration="800"
             >
               {/* Title */}
               <div className="flex items-start gap-3 mb-5">
@@ -64,17 +69,23 @@ export default function OurLocations() {
               {/* Phone */}
               <div className="flex items-center gap-3 mb-4">
                 <Phone className="text-gray-600 w-5 h-5 shrink-0" />
-                <p className="text-gray-700 text-sm break-all">
+                <a
+                  href={`tel:${loc.phone.replace(/\s+/g, "")}`}
+                  className="text-gray-700 text-sm hover:text-cyan-600 transition break-all"
+                >
                   {loc.phone}
-                </p>
+                </a>
               </div>
 
               {/* Email */}
               <div className="flex items-center gap-3">
                 <Mail className="text-gray-600 w-5 h-5 shrink-0" />
-                <p className="text-gray-700 text-sm break-all">
+                <a
+                  href={`mailto:${loc.email}`}
+                  className="text-gray-700 text-sm hover:text-cyan-600 transition break-all"
+                >
                   {loc.email}
-                </p>
+                </a>
               </div>
             </div>
           ))}
