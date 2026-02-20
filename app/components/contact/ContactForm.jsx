@@ -7,7 +7,7 @@ export default function ContactForm() {
         
         {/* Heading */}
         <h2
-          className="text-3xl md:text-4xl font-bold text-center text-cyan-600 mb-10"
+          className="text-3xl md:text-4xl font-bold text-center text-black mb-10"
           data-aos="fade-down"
           data-aos-duration="1000"
         >
@@ -29,7 +29,7 @@ export default function ContactForm() {
               placeholder="First Name*"
               required
               autoComplete="given-name"
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
+              className="placeholder-gray-400 text-black w-full border-1 border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
             />
 
             <input
@@ -37,7 +37,7 @@ export default function ContactForm() {
               name="lastName"
               placeholder="Last Name"
               autoComplete="family-name"
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
+              className="placeholder-gray-400 text-black w-full border-1 border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
             />
           </div>
 
@@ -49,7 +49,7 @@ export default function ContactForm() {
               placeholder="Email*"
               required
               autoComplete="email"
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
+              className="placeholder-gray-400 text-black w-full border-1 border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
             />
 
             <input
@@ -58,7 +58,7 @@ export default function ContactForm() {
               placeholder="Phone No.*"
               required
               autoComplete="tel"
-              className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
+              className="placeholder-gray-400 text-black w-full border-1 border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
             />
           </div>
 
@@ -68,7 +68,7 @@ export default function ContactForm() {
             name="company"
             placeholder="Company"
             autoComplete="organization"
-            className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
+            className="placeholder-gray-400 text-black w-full border-1 border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition"
           />
 
           {/* Requirements */}
@@ -76,7 +76,7 @@ export default function ContactForm() {
             rows="5"
             name="requirements"
             placeholder="Requirements"
-            className="placeholder-gray-400 text-black w-full border border-gray-300 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition resize-none"
+            className="placeholder-gray-400 text-black w-full border-1 border-gray-400 px-4 py-3 rounded-md outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition resize-none"
           ></textarea>
 
           {/* Button */}

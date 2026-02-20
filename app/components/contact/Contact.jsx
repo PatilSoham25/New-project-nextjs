@@ -14,6 +14,8 @@ export default function ContactImg() {
         className="object-cover"
       />
 
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-black/80"></div>
+
       {/* Content */}
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="underline underline-offset-2 text-black font-serif text-3xl md:text-6xl font-bold"

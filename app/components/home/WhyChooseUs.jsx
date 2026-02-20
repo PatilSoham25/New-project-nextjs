@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
           {/* LEFT IMAGE */}
           <div
             className="relative flex justify-center items-center"
-            data-aos="fade-right"
+            
           >
             {/* wrapper that controls size */}
             <div className="relative w-full max-w-[500px] h-[400px] sm:h-[500px]">

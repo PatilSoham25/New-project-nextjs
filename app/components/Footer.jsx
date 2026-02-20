@@ -5,7 +5,7 @@ import { Linkedin, Instagram, Facebook, Youtube, ArrowRight } from "lucide-react
 
 export default function Footer() {
   return (
-    <footer className="bg-teal-600 text-white">
+    <footer className="bg-cyan-600 text-white">
       <div className="max-w-7xl mx-auto px-5 py-16">
 
         {/* TOP BAR */}

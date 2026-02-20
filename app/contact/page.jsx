@@ -1,6 +1,7 @@
 import Contact from "../components/contact/Contact"
 import ContactForm from "../components/contact/ContactForm"
 import OurLocations from "../components/contact/OurLocations"
+import MapLocation from "../components/contact/MapLocation";
 import Footer from "../components/Footer"
 
 export default function ContactPage() {
@@ -9,6 +10,7 @@ export default function ContactPage() {
       <Contact />
       <ContactForm />
       <OurLocations />
+      <MapLocation />
       <Footer />
     </>
   ) 

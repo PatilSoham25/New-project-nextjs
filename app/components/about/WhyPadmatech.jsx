@@ -48,7 +48,7 @@ export default function WhyPadmatech() {
       
       {/* HEADING */}
       <h2
-        className="text-center text-cyan-700 text-3xl md:text-4xl font-bold mb-12"
+        className="text-center text-black text-3xl md:text-4xl font-bold mb-12"
         data-aos="fade-down"
         data-aos-duration="1000"
       >

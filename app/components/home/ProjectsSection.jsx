@@ -45,7 +45,7 @@ export default function ProjectsSection() {
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Title */}
-        <h2 className="text-center text-4xl font-bold text-teal-600 mb-12"
+        <h2 className="text-center text-4xl font-bold text-black mb-12"
         >
           Our Projects
         </h2>

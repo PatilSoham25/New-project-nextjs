@@ -43,7 +43,7 @@ export default function CompanyIntro() {
 
         {/* Heading */}
         <h1
-          className="text-3xl md:text-4xl font-bold text-cyan-600 mb-10"
+          className="text-3xl md:text-4xl font-bold text-black mb-10"
           data-aos="fade-up"
         >
           About Padmatech Industries

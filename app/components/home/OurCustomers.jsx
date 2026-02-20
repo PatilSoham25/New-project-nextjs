@@ -28,7 +28,7 @@ export default function OurCustomers() {
       <div className="container mx-auto px-4">
         
         {/* Heading */}
-        <h2 className="text-teal-600 text-3xl md:text-4xl font-bold text-center mb-12"
+        <h2 className="text-black text-3xl md:text-4xl font-bold text-center mb-12"
         >
           Our Valued Customers
         </h2>

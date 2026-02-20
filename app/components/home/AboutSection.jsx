@@ -31,8 +31,7 @@ export default function AboutSection() {
           {/* Experience Badge */}
           <div
             className="absolute -top-10 right-0 md:right-10 bg-teal-500 text-white w-28 h-28 rounded-full flex flex-col items-center justify-center shadow-xl"
-            data-aos="zoom-in"
-            data-aos-delay="300"
+            data-aos="fade-down"
           >
             <h3 className="text-2xl font-bold">20+</h3>
             <p className="text-xs text-center leading-tight">
@@ -50,12 +49,12 @@ export default function AboutSection() {
         </div>
 
         {/* RIGHT CONTENT */}
-        <div>
+        <div data-aos="fade-left">
 
           {/* Heading */}
           <h2
-            className="text-4xl font-bold text-teal-600 mb-6"
-            data-aos="fade-up"
+            className="text-4xl font-bold text-black mb-6"
+            
           >
             About Us
           </h2>
@@ -63,8 +62,7 @@ export default function AboutSection() {
           {/* Paragraph */}
           <p
             className="text-gray-700 leading-7 mb-6"
-            data-aos="fade-up"
-            data-aos-delay="200"
+            
           >
             Established in 2005, Padmatech Industries is a premier EPC company
             specializing in turnkey equipment supply, process equipment
